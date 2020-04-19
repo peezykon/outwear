@@ -1,0 +1,402 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+     :root {
+        --light-white: #f1f1eb;
+        --gray: #5d6a80;
+        --white: #fff;
+        --light-gray: #9aa4b5;
+        --brown: #54524d;
+    }
+    
+    #wrapper {
+        background-color: var(--light-white);
+    }
+    
+    nav {
+        background-color: var(--light-gray);
+    }
+    
+    .container {
+        position: relative;
+    }
+    
+    .navbar-brand {
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        display: block;
+        font-weight: bold;
+        padding: 1.6rem 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--brown) !important;
+    }
+    
+    .navbar-nav {
+        width: 100%;
+        justify-content: center;
+        color: var(--brown) !important;
+    }
+    
+    p a {
+        text-decoration: none;
+        color: var(--brown) !important;
+        padding: 1.6rem 1rem !important;
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+    }
+    
+    #navbarSupportedContent>ul>li.nav-item>a {
+        padding: 0 1rem !important;
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+        color: var(--brown) !important;
+    }
+    
+    .navbar-toggler {
+        border: none !important;
+    }
+    
+    .navbar-toggler {
+        padding: 0 !important;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid var(--brown) !important;
+        border-radius: .25rem;
+    }
+    
+    #navbarSupportedContent>ul>li.nav-item.active {
+        border-bottom: 1px solid var(--brown);
+    }
+    
+    #navbarSupportedContent>ul>li.nav-item:hover {
+        border-bottom: 1px solid var(--brown);
+    }
+    
+    #navbarSupportedContent>ul>li.nav-item.active:hover {
+        border-bottom: none;
+    }
+    
+    main {
+        height: 90vh;
+        position: relative;
+        width: 100%;
+    }
+    
+    section {
+        display: flex !important;
+        width: 100%;
+        height: 90vh;
+    }
+    
+    .image {
+        width: 60%;
+    }
+    
+    .image img {
+        width: 100%;
+        height: 90vh;
+    }
+    
+    .content {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .content p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 28px;
+        color: var(--light-gray);
+    }
+    
+    .content .btn {
+        padding: 15px 30px;
+        background-color: var(--gray);
+        border: none;
+        outline: none;
+        display: flex;
+        align-self: start;
+        margin-left: 10%;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: var(--white);
+        animation: moveInButtons 3s ease-out;
+        cursor: pointer;
+    }
+    
+    .sect {
+        position: absolute;
+        top: 12%;
+        right: 23%;
+        color: var(--light-gray);
+        animation: moveInButtons 5s ease-out;
+    }
+    
+    .sect p {
+        font-size: 20px;
+        /* margin-left: 42px; */
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    
+    .sect h1 {
+        font-size: 84px;
+    }
+    
+    .image-section {
+        width: 50%;
+    }
+    
+    .love {
+        width: 20%;
+        position: relative;
+    }
+    
+    .love-1 {
+        position: absolute;
+        top: 27%;
+        left: 29%;
+        animation: moveInButton 5s infinite ease-in-out;
+    }
+    
+    .love-2 {
+        position: absolute;
+        top: 31%;
+        left: 7%;
+        animation: moveInButton 5s infinite ease-in-out;
+    }
+    
+    .love-3 {
+        position: absolute;
+        top: 49%;
+        left: 23%;
+        animation: moveInButton 5s infinite ease-in-out;
+    }
+    
+    .discover {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .discover img {
+        width: 80%;
+    }
+    
+    h3 {
+        position: absolute;
+        top: 27%;
+        left: 17%;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        z-index: 2;
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+    
+    .discover .btn {
+        padding: 20px 40px;
+        background-color: var(--gray);
+        border: none;
+        outline: none;
+        display: flex;
+        align-self: flex-end;
+        margin-right: 20%;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: var(--white);
+        cursor: pointer;
+        margin-top: -5.5%;
+        animation: moveInRight 5s infinite ease-in-out;
+    }
+    
+    @keyframes moveInButton {
+        0% {
+            opacity: 0;
+            transform: translateY(3rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @keyframes moveInButtons {
+        0% {
+            opacity: 0;
+            transform: translateY(-3rem);
+        }
+        80% {
+            transform: translateY(-1rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @keyframes moveInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(10rem);
+        }
+        80% {
+            transform: translateX(-1rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .content p {
+            font-size: 11px;
+            line-height: 22px;
+            font-weight: 500;
+        }
+        .sect {
+            top: 12%;
+            right: 14%;
+        }
+        main.main {
+            height: 50vh;
+        }
+        section.section {
+            height: 50vh;
+            flex-direction: row;
+        }
+        .love-1 {
+            top: 27%;
+            left: 29%;
+        }
+        .love-2 {
+            top: 31%;
+            left: 7%;
+        }
+        .love-3 {
+            top: 49%;
+            left: 23%;
+        }
+        h3 {
+            top: 27%;
+            left: 14%;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-size: 13px !important;
+            font-weight: bold;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        main {
+            width: 100%;
+        }
+        section {
+            width: 100%;
+            height: 90vh;
+            flex-direction: column;
+        }
+        .image {
+            width: 100%;
+            height: 60vh;
+        }
+        .image img {
+            width: 100%;
+            height: 100%;
+        }
+        .content {
+            width: 100%;
+        }
+        .content p {
+            margin: 30px 0 20px;
+            font-size: 14px;
+            line-height: 28px;
+            color: var(--light-gray);
+        }
+        .content .btn {
+            padding: 10px 20px;
+            background-color: var(--gray);
+            border: none;
+            outline: none;
+            display: flex;
+            align-self: center;
+            margin-left: 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--white);
+            animation: moveInButtons 3s ease-out;
+            cursor: pointer;
+        }
+        .sect {
+            top: 48%;
+            right: 19%;
+        }
+        .sect p {
+            font-size: 12px;
+        }
+        .sect h1 {
+            font-size: 60px;
+        }
+        main.main {
+            height: 70vh;
+        }
+        section.section {
+            height: 70vh;
+            flex-direction: column;
+        }
+        .image-section {
+            height: 50%;
+        }
+        .love {
+            width: 40%;
+        }
+        .love-1 {
+            top: 3%;
+            left: 45%;
+        }
+        .love-2 {
+            top: 6%;
+            left: 2%;
+        }
+        .love-3 {
+            top: 27%;
+            left: 33%;
+        }
+        h3 {
+            top: 3%;
+            left: 23%;
+            font-size: 8px !important;
+            font-weight: bold !important;
+        }
+        .discover {
+            height: 50%;
+            margin-top: 70px;
+            width: 100%;
+        }
+        .discover img {
+            width: 70%;
+        }
+        .discover .btn {
+            padding: 10px 20px;
+            background-color: var(--gray);
+            font-size: 12px;
+        }
+    }
